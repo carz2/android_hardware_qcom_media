@@ -31,7 +31,7 @@ include $(CLEAR_VARS)
 
 ifneq ($(BUILD_TINY_ANDROID),true)
 
-ifeq ($(TARGET_BOARD_PLATFORM),msm7k)
+ifeq ($(BOARD_USES_QCOM_LIBS),true)
     include $(OMX_CORE_PATH)/omxcore/Android.mk
 endif
 
